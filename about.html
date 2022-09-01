@@ -1,44 +1,75 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/style.css" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-  	<meta name="author" content="Catarina Mendes">
-  	<meta name="description" content="Catarina Mendes UX Portfolio">
-	<meta name="keywords" content="UX, portfolio, marketing">
-    <title>About Catarina Mendes This is a change!</title>
-  </head>
+	<head>
+			<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+			<title>
+				About Catarina
+			</title>
 
-  <body>
-    <header> <!-- Header Section -->
-    <div>
-		<img src="https://i.ibb.co/2gCcDQp/CM-Logo-150x50.jpg" alt="Catarina Mendes">
-        <nav>
-			<ul>
-				<li><a href="index.html">My Work</a></li>
-				<li><a href="about.html">About Me</a></li>
-				<li><a href="#contact">Get in touch</a></li>
-			</ul>
-        </nav>
-      </div>
-    </header> <!-- End of Header Section -->
+			<link rel="shortcut icon" href="img/favicon.ico" />
+			
+			<link rel="stylesheet" type="text/css" href="css/style.css" />
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+			<link rel="preconnect" href="https://fonts.googleapis.com">
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+			<link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans&display=swap" rel="stylesheet">
+	
+			<meta name="author" content="Catarina Mendes">
+			<meta name="description" content="About me">
+  
+	</head>
+
+ <body>
+  
+	<!-- Header -->
+	
+    <header> 
+		<div class="container">
+		
+			<!-- Logo -->
+		
+			<div class="logo">	
+				<a href="index.html">
+					<img src="https://i.ibb.co/2gCcDQp/CM-Logo-150x50.jpg" alt="Catarina Mendes">
+				</a>
+				
+			<!-- Navigation -->	
+				
+			<nav class="navigation">
+				<ul>
+					<li><a href="index.html">My Work</a></li>
+					<li><a href="about.html">About Me</a></li>
+					<li><a href="#contact">Get in touch</a></li>
+				</ul>
+			</nav>
+		</div>
+    </header>
+	
+	<!-- Main Section -->
 	
 	<main>
-		<div>	<!-- Main content Header Section -->
-			<div>
+	
+		<!-- Hero/Introduction -->
+	
+		<div id="hero">     
+			<div class="container">
 				<h1>About Me</h1>
 			</div>
-		</div> <!-- End of Main content Header Section -->
+		</div>
+		
+		<!-- About Section -->
 	
-		<div> <!-- Main content -->
-			<div>
-				<picture>	<!-- About me image/photo -->
+		<div class="about">
+			<div class="container">
+				
+				<!-- About me image/photo -->
+				<picture>
 					<source srcset="img/about-page/about-page-catarina-mendes-600x600.jpg" media="(max-width:767px)">
 					<img src="img/about-page/about-page-catarina-mendes-1200x1200.jpg" alt="Catarina Mendes profile picture">
 				</picture>
-				<div>	 <!-- Columns container -->
+				
+				<div class="row">	 <!-- Columns container -->
 					<div>	 <!-- My Story -->
 						<h2>Digital Marketing | UX Design</h2>
 						<h3>Manager / Senior Executive</h3>
@@ -48,7 +79,7 @@
 							<p><a href="download-files/Catarina-Mendes-CV-2022.pdf" class="button cv" target="_blank">Download a copy of my CV</a></p>
 					</div>	 <!-- End of My CV -->
 					
-					<div>	 <!-- Skills & Tools -->
+					<div class="row">	 <!-- Skills & Tools -->
 					<h2>Skills & Tools</h2>
 						<div>
 						<div>
@@ -75,48 +106,44 @@
 							</ul>
 						</div>
 						</div>
-					</div>	 <!-- End of Skills & Tools -->
+					</div>
+					
+					
 				</div>
+				
+				
 			</div>
-		</div> <!-- End of Main content -->
+		</div>
        
 	</main>    
-	<footer id="contact">   <!-- Footer Section -->
-	<div>
-		<h2>Get in touch</h2>
-		<p>If you wish to connect with me, chose between one of the options below.</p>
-		<p>Email me: <a href="mailto:marques.catarina@gmail.com">marques.catarina@gmail.com</a></p>
-		<p>Call me: +44 07 922 003 201</p>
-		<p>LinkedIn: <a href="https://www.linkedin.com/in/catarina-mendes/" target="_blank">Catarina Mendes</a></p>
 	
-	<div> <!--Social Media Layout and Placeholders-->
-		<ul>
+	
+	
+	<footer id="contact">
+		<div class="container">
+			<h2>Get in touch</h2>
+				<p>If you wish to connect with me, chose between one of the options below.</p>
+				<p>Email me: <a href="mailto:marques.catarina@gmail.com">marques.catarina@gmail.com</a></p>
+				<p>Call me: +44 07 922 003 201</p>
+				<p>LinkedIn: <a href="https://www.linkedin.com/in/catarina-mendes/" target="_blank">Catarina Mendes</a></p>
+		</div>
+
+		<div class="social"> <!--Social Media Layout and Placeholders-->
+			
 			<a href="https://www.linkedin.com/" target="_blank">
-			<?xml version="1.0" ?><svg enable-background="new 0 0 512 512" height="512px" id="Layer_1" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs id="defs9"><linearGradient gradientTransform="translate(1635.9966,-2013.2351)" gradientUnits="userSpaceOnUse" id="linearGradient3006" x1="256.00049" x2="256.00049" xlink:href="#SVGID_1_-8" y1="512" y2="0.00048828131"/><linearGradient gradientUnits="userSpaceOnUse" id="SVGID_1_-8" x1="256.00049" x2="256.00049" y1="512" y2="0.00048828131"><stop id="stop4-8" offset="0" style="stop-color:#0c80b1;stop-opacity:1"/><stop id="stop6-2" offset="1" style="stop-color:#11a7df;stop-opacity:1"/></linearGradient><linearGradient gradientTransform="translate(-305.89831,-425.22034)" gradientUnits="userSpaceOnUse" id="linearGradient3388" x1="256.00049" x2="256.00049" xlink:href="#SVGID_1_-8" y1="512" y2="0.00048828131"/><linearGradient gradientUnits="userSpaceOnUse" id="linearGradient3779" x1="518.50848" x2="518.50848" xlink:href="#SVGID_1_-8" y1="518.50848" y2="2.1694915"/><linearGradient gradientTransform="matrix(0,-1,-1,0,512,512)" gradientUnits="userSpaceOnUse" id="linearGradient3781" x1="-1.8544069e-006" x2="512" xlink:href="#SVGID_1_-8-1" y1="256" y2="256"/><linearGradient gradientUnits="userSpaceOnUse" id="SVGID_1_-8-1" x1="256.00049" x2="256.00049" y1="512" y2="0.00048828131"><stop id="stop4-8-7" offset="0" style="stop-color:#0c80b1;stop-opacity:1"/><stop id="stop6-2-4" offset="1" style="stop-color:#11a7df;stop-opacity:1"/></linearGradient><linearGradient gradientTransform="matrix(0,-1,-1,0,512,512)" gradientUnits="userSpaceOnUse" id="linearGradient3007" x1="-1.8544069e-006" x2="512" xlink:href="#SVGID_1_-8-1" y1="256" y2="256"/><linearGradient gradientUnits="userSpaceOnUse" id="linearGradient3014" x1="518.50848" x2="518.50848" xlink:href="#SVGID_1_-8" y1="518.50848" y2="2.1694915"/><linearGradient gradientTransform="matrix(0,-1,-1,0,-451.25424,622.64407)" gradientUnits="userSpaceOnUse" id="linearGradient3020" x1="-1.8544069e-006" x2="512" xlink:href="#SVGID_1_-8-1" y1="256" y2="256"/><linearGradient gradientTransform="matrix(0,-1,-1,0,511.99576,511.98782)" gradientUnits="userSpaceOnUse" id="linearGradient3044" x1="-1.8544069e-006" x2="512" xlink:href="#SVGID_1_-8-1" y1="256" y2="256"/></defs><g id="g3046"><path d="M 73.125,-9.2651453e-7 C 32.73606,-9.2651453e-7 0,32.736059 0,73.124999 L 0,438.84375 C 0,479.23269 32.73606,512 73.125,512 l 365.71875,0 C 479.23269,512.009 512,479.23269 512,438.84375 L 512,73.124999 C 512,32.727529 479.23269,-9.2651453e-7 438.84375,-9.2651453e-7 l -365.71875,0 z" id="path5-0" style="fill:url(#linearGradient3044);fill-opacity:1"/><path d="m 277.2225,230.326 v -0.771 c -0.163,0.245 -0.345,0.508 -0.49,0.771 h 0.49 z m -117.141,193.886 h -76 v -227 h 76 v 227 z m -37.937,-258 h -0.49 c -25.351,0 -41.736,-17.396 -41.736,-39.199 0,-22.284 16.885,-39.225 42.726,-39.225 25.831,0 41.736,16.924 42.235,39.208 -0.001,21.802 -16.405,39.216 -42.735,39.216 z m 309.937,258 h -75 V 303.029 c 0,-30.54 -11.1,-51.372 -38.446,-51.372 -20.859,0 -33.442,14.045 -38.905,27.609 -1.996,4.872 -2.648,11.632 -2.648,18.437 v 126.509 h -75.384 c 0,0 0.998,-206 0,-227 h 75.383 v 32.343 c 10,-15.479 27.965,-37.527 68.061,-37.527 49.693,0 86.939,32.482 86.939,102.272 v 129.912 l 0,0 z" id="path5-9" style="fill:#ffffff"/></g></svg>
+				<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="48px" height="48px"><path fill="#0288d1" d="M24 4A20 20 0 1 0 24 44A20 20 0 1 0 24 4Z"/><path fill="#fff" d="M14 19H18V34H14zM15.988 17h-.022C14.772 17 14 16.11 14 14.999 14 13.864 14.796 13 16.011 13c1.217 0 1.966.864 1.989 1.999C18 16.11 17.228 17 15.988 17zM35 24.5c0-3.038-2.462-5.5-5.5-5.5-1.862 0-3.505.928-4.5 2.344V19h-4v15h4v-8c0-1.657 1.343-3 3-3s3 1.343 3 3v8h4C35 34 35 24.921 35 24.5z"/></svg>
+			</a>
+			<a href="https://twitter.com/?lang=en" target="_blank">
+				<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="48px" height="48px"><path fill="#03A9F4" d="M42,12.429c-1.323,0.586-2.746,0.977-4.247,1.162c1.526-0.906,2.7-2.351,3.251-4.058c-1.428,0.837-3.01,1.452-4.693,1.776C34.967,9.884,33.05,9,30.926,9c-4.08,0-7.387,3.278-7.387,7.32c0,0.572,0.067,1.129,0.193,1.67c-6.138-0.308-11.582-3.226-15.224-7.654c-0.64,1.082-1,2.349-1,3.686c0,2.541,1.301,4.778,3.285,6.096c-1.211-0.037-2.351-0.374-3.349-0.914c0,0.022,0,0.055,0,0.086c0,3.551,2.547,6.508,5.923,7.181c-0.617,0.169-1.269,0.263-1.941,0.263c-0.477,0-0.942-0.054-1.392-0.135c0.94,2.902,3.667,5.023,6.898,5.086c-2.528,1.96-5.712,3.134-9.174,3.134c-0.598,0-1.183-0.034-1.761-0.104C9.268,36.786,13.152,38,17.321,38c13.585,0,21.017-11.156,21.017-20.834c0-0.317-0.01-0.633-0.025-0.945C39.763,15.197,41.013,13.905,42,12.429"/></svg>
 			</a>
 			
-			
-			<a href="https://twitter.com/?lang=en" target="_blank"> <!-- Twitter Icon -->
-			<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 455.731 455.731" style="enable-background:new 0 0 455.731 455.731;" xml:space="preserve">
-			<g>
-            <rect x="0" y="0" style="fill:#50ABF1;" width="455.731" height="455.731" />
-            <path style="fill:#FFFFFF;" d="M60.377,337.822c30.33,19.236,66.308,30.368,104.875,30.368c108.349,0,196.18-87.841,196.18-196.18
-			c0-2.705-0.057-5.39-0.161-8.067c3.919-3.084,28.157-22.511,34.098-35c0,0-19.683,8.18-38.947,10.107
-			c-0.038,0-0.085,0.009-0.123,0.009c0,0,0.038-0.019,0.104-0.066c1.775-1.186,26.591-18.079,29.951-38.207
-			c0,0-13.922,7.431-33.415,13.932c-3.227,1.072-6.605,2.126-10.088,3.103c-12.565-13.41-30.425-21.78-50.25-21.78
-			c-38.027,0-68.841,30.805-68.841,68.803c0,5.362,0.617,10.581,1.784,15.592c-5.314-0.218-86.237-4.755-141.289-71.423
-			c0,0-32.902,44.917,19.607,91.105c0,0-15.962-0.636-29.733-8.864c0,0-5.058,54.416,54.407,68.329c0,0-11.701,4.432-30.368,1.272
-			c0,0,10.439,43.968,63.271,48.077c0,0-41.777,37.74-101.081,28.885L60.377,337.822z" />
-			</g>
-			</svg>
-			</a>
-		</ul>
-	</div>
-	<div>
-		<p>Copyright Catarina Mendes, 2022</p>
-	</div>
-	</div>
-	</footer>   <!-- End of Footer Section -->
-	
+		</div>
+		
+		<div>
+			<p>Copyright Catarina Mendes, 2022</p>
+		</div>
+		
+	</footer>
+
   </body>
 </html>

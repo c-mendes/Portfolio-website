@@ -13,66 +13,79 @@ Colors used:
 
 
 body{
-	background-color:ghostwhite;
+	background-color:#FFFFFF;
 	font-family: 'merriweather sans', sans-serif;
-	font-size: 16px;
+	font-size: 1.6rem;
 	font-weight: 400;
 	line-height: 1.3;
 	color: #000000;
 }
 
-h1, h2, h3, h4 {
-  line-height: 1.3;
+html{
+	font-size: 62.5%;
 }
+
+/*fonts*/
+
+h1, h2, h3, h4 {
+  line-height: 1.2;
+}
+
 h1 {
   font-size: 4.209rem;
-  font-weight: 700;
+  font-size: 62.5;
+  font-weight: 500;
 }
 
 h2 {
   font-size: 3.157rem;
-  font-weight: 700;
+  font-size: 62.5;
+  font-weight: 500;
 }
 
 h3 {
   font-size: 2.369rem;
+  font-size: 62.5;
   font-weight: 400;
 }
 h4 {
   font-size: 1.777rem;
+  font-size: 62.5;
   font-weight: 400;
 }
 h5 {
   font-size: 1.333rem;
+  font-size: 62.5;
   font-weight: 400;
 }
 small, .text_small {
   font-size: 0.75rem;
+  font-size: 62.5;
 }
 
 img {
   width: 100%;
 }
 
+/*links*/
+
 a {
-  color: #000000;
-  text-decoration: none;
-}
-a:hover {
   color: #3E7096;
-  text-decoration: underline; 
-}
-a:hover
-a:focus {
-  color: #3E7096;
-  text-decoration: underline;
 }
 a:visited { 
   color: #7B8EA4;
 }
+a:hover
+a:focus {
+  color: #846564;
+  text-decoration: underline;
+}
 a:active { 
   color: #CB4C9A;
 }
+
+/*buttons*/
+
 a.button {
   display: inline-block; 
   background-color: #CB4C9A;
@@ -106,3 +119,107 @@ a.button.cv:hover {
   opacity: 0.8;
   text-decoration: none;
 }
+
+
+/* Layout styling */
+
+main {
+  padding-top: 150px;
+}
+
+/* Layout styling */
+/* header */
+
+header {
+  background-color: #EAE9EA;
+  padding: 10px 0 4px;
+  text-align: center;
+  position: fixed;
+}
+
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0; 
+}
+.logo {
+  max-width: 200px;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  font-weight: 600;
+  color: #3E7096;
+  text-transform: uppercase;
+}
+
+nav > ul > li > a:visited { 
+  color: #3E7096;
+}
+
+nav > ul > li > a:hover{ 
+  color: #3E7096;
+}
+
+nav > ul > li > a:active { 
+  color: #CB4C9A;
+}
+
+nav {
+  display: inline-block;
+  width: 100%;
+}
+
+/* Layout styling */
+/* hero */
+
+#hero h1 {
+  text-align: center;
+  background-color: #FFFFFF;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+/* Layout styling */
+/* footer */
+
+#contact {
+  text-align: center;
+  background-color: #3E7096;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+  color:#FFFFFF;
+  width: 100%
+}
+
+#contact h2 {
+  font-size: 3.157rem;
+  font-size: 62.5;
+  font-weight: 700;
+}
+
+#contact a {
+  color: #EAE9EA;
+}
+a:visited { 
+  color: #7B8EA4;
+}
+#contact a:hover {
+  color: #CB4C9A;
+  text-decoration: underline;
+}
+
+
