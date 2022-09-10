@@ -101,13 +101,15 @@ a:active {
 a.button {
   display: inline-block;
   background-color: #CB4C9A;
-  border: none;
   color: #FFFFFF;
   font-size: 16px;
+  text-decoration: none;
   text-align: center;
   text-decoration: none;
   padding: 15px 32px;
-  transition: 0.2s opacity
+  border: none;
+  transition-duration: 0.2s;
+  transition-property: opacity;
 }
   
 a.button:hover {
@@ -117,6 +119,22 @@ a.button:hover {
 
 a.button:visited {
   color: #FFFFFF;
+}
+
+.button {
+  display: inline-block;
+  background-color: #ff7f50;
+  color: white;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #994c30;
+  transition-duration: 0.2s;
+  transition-property: opacity;
+}
+.button:hover {
+  opacity: 0.8;
 }
 
 a.button.cv {
@@ -158,9 +176,24 @@ header {
   padding: 0 15px;
 }
 
+.left {
+  text-align: left;
+}
+
 .row {
   margin: 25px 0;
 }
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #000;
+}
+
 .logo {
   max-width: 85px;
 }
@@ -196,6 +229,40 @@ nav > ul > li > a:active {
 nav {
   display: inline-block;
   width: 100%;
+}
+
+#berlin-illustration {
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+}
+
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
 /* Layout styling */
@@ -246,6 +313,9 @@ Medium devices (640px and larger)
 	header {
 	text-align: unset;
 	padding: 20px 0 13px;
+	margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
 }
 	nav {
     width: auto;
@@ -258,12 +328,76 @@ Medium devices (640px and larger)
 	display: block;
 }
 
+#about-page h3 { 
+	margin-top: 0;
+}
+
+.container {
+  padding: 0 15px;
+  max-width:1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  margin: 25px 0;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.col-md-6 {
+  width: 50%;
+  float: left;
+}
+
 }
 
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+header {
+	text-align: unset;
+	padding: 20px 0 13px;
+}
+	nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+  
+#hero span {
+	text-align: center;
+	display: block;
+}
+.container {
+  padding: 0 15px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  margin: 25px 0;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.col-xl-6 {
+    width: 50%;
+    float: left;
+  }
+
+.col-xl-7 {
+    width: 60%;
+    float: left;
+  }
+
 }
 
 
@@ -271,4 +405,49 @@ Large devices (1024px or larger)
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
+	header {
+	text-align: unset;
+	padding: 20px 0 13px;
+}
+	nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+  
+#hero span {
+	text-align: center;
+	display: block;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.row {
+  margin: 25px 0;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.col-md-6 {
+  width: 40%;
+}
+.col-md-7 {
+  width: 60%;
+}
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+}
+
+[class*="col-"] {
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
 }
