@@ -3,20 +3,25 @@
 	<head>
 			<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 			<title>
-				About Catarina
+				Catarina Mendes | About Me
 			</title>
 
-			<link rel="shortcut icon" href="img/favicon.ico" />
+			<link rel="shortcut icon" href="img/favicon.ico">
 
-			<link rel="stylesheet" type="text/css" href="css/style.css" />
+			<link rel="stylesheet" type="text/css" href="css/normalize.css">
+			<link rel="stylesheet" type="text/css" href="css/style.css">
 			<meta name="viewport" content="width=device-width, initial-scale=1">
 
 			<link rel="preconnect" href="https://fonts.googleapis.com">
 			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-			<link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans&display=swap" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,700&family=Open+Sans&display=swap" rel="stylesheet">
+			
+			<link rel="preconnect" href="https://fonts.googleapis.com">
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+			<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,700&family=Open+Sans&display=swap" rel="stylesheet">
 
 			<meta name="author" content="Catarina Mendes">
-			<meta name="description" content="About me">
+			<meta name="description" content="About me | Catarina Mendes, UK-based Marketeer and UX Designer. Find out more">
 
 	</head>
 
@@ -24,12 +29,11 @@
 
 	<!-- Header -->
 
-    <header>
+    <header id="toplevelnav">
 		<div class="container">
 
 			<!-- Logo -->
 
-			<div>
 				<a href="index.html">
 					<img src="img/cm_logo.svg" class="logo" alt="Catarina Mendes">
 				</a>
@@ -38,13 +42,15 @@
 
 			<nav class="navigation">
 				<ul>
-					<li><a href="index.html">My Work</a></li>
-					<li><a href="about.html">About Me</a></li>
-					<li><a href="#contact">Get in touch</a></li>
+					<li><a href="index.html">Work</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</nav>
+			
 		</div>
     </header>
+
 
 	<!-- Main Section -->
 
@@ -54,7 +60,7 @@
 
 		<div id="hero">
 			<div class="container">
-				<h1>About Me</h1>
+				<h1>About <span>Me</span></h1>
 			</div>
 		</div>
 
@@ -67,7 +73,7 @@
 				<div class="row">
 					<div class="column col-md-6 col-lg-7">
 						<picture>
-							<source srcset="img/about-page/about-page-catarina-mendes-600x600.jpg" media="(max-width:767px)">
+							<source srcset="img/about-page/about-page-catarina-mendes-600x600.jpg" media="(max-width:250px)">
 							<img src="img/about-page/about-page-catarina-mendes-1200x1200.jpg" alt="Catarina Mendes profile picture">
 						</picture>
 					</div>
@@ -80,7 +86,7 @@
 								<p>Creative, Marketing Professional with 15 years of international experience. 7 years experience in B2B working within the IT sector.</p>
 								<p>A keen enthusiast of UX/UI, design thinking and practices and marketing automation. Proven experience setting marketing goals; managing and executing end-to-end tactical campaigns.</p>
 								<p>Boost brand awareness amongst targeted audiences, whilst driving quality traffic. Increase favourability amongst consumers by managing and executing marketing activities.</p>
-									<p><a href="download-files/Catarina-Mendes-CV-2022.pdf" class="button cv" target="_blank">Download a copy of my CV</a></p>
+									<p><a href="img/download-files/Catarina-Mendes-CV-2022.pdf" class="button cv" target="_blank">Download a copy of my CV</a></p>
 						</span>
 					</div>
 				</div>
@@ -129,7 +135,7 @@
 
 	<footer id="contact">
 		<div class="container">
-			<h2>Get in touch</h2>
+			<h2>Contact <span>Me</span></h2>
 				<p>If you wish to connect with me, chose between one of the options below.</p>
 				<p>Email me: <a href="mailto:marques.catarina@gmail.com">marques.catarina@gmail.com</a></p>
 				<p>Call me: +44 07 922 003 201</p>
@@ -139,10 +145,10 @@
 		<div class="social"> <!--Social Media Layout and Placeholders-->
 
 			<a href="https://www.linkedin.com/" target="_blank">
-				<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="48px" height="48px"><path fill="#0288d1" d="M24 4A20 20 0 1 0 24 44A20 20 0 1 0 24 4Z"/><path fill="#fff" d="M14 19H18V34H14zM15.988 17h-.022C14.772 17 14 16.11 14 14.999 14 13.864 14.796 13 16.011 13c1.217 0 1.966.864 1.989 1.999C18 16.11 17.228 17 15.988 17zM35 24.5c0-3.038-2.462-5.5-5.5-5.5-1.862 0-3.505.928-4.5 2.344V19h-4v15h4v-8c0-1.657 1.343-3 3-3s3 1.343 3 3v8h4C35 34 35 24.921 35 24.5z"/></svg>
+				<svg class="linkedin" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="48px" height="48px"><path fill="#fff" d="M24 4A20 20 0 1 0 24 44A20 20 0 1 0 24 4Z"/><path fill="#0288d1" d="M14 19H18V34H14zM15.988 17h-.022C14.772 17 14 16.11 14 14.999 14 13.864 14.796 13 16.011 13c1.217 0 1.966.864 1.989 1.999C18 16.11 17.228 17 15.988 17zM35 24.5c0-3.038-2.462-5.5-5.5-5.5-1.862 0-3.505.928-4.5 2.344V19h-4v15h4v-8c0-1.657 1.343-3 3-3s3 1.343 3 3v8h4C35 34 35 24.921 35 24.5z"/></svg>
 			</a>
 			<a href="https://twitter.com/?lang=en" target="_blank">
-				<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="48px" height="48px"><path fill="#03A9F4" d="M42,12.429c-1.323,0.586-2.746,0.977-4.247,1.162c1.526-0.906,2.7-2.351,3.251-4.058c-1.428,0.837-3.01,1.452-4.693,1.776C34.967,9.884,33.05,9,30.926,9c-4.08,0-7.387,3.278-7.387,7.32c0,0.572,0.067,1.129,0.193,1.67c-6.138-0.308-11.582-3.226-15.224-7.654c-0.64,1.082-1,2.349-1,3.686c0,2.541,1.301,4.778,3.285,6.096c-1.211-0.037-2.351-0.374-3.349-0.914c0,0.022,0,0.055,0,0.086c0,3.551,2.547,6.508,5.923,7.181c-0.617,0.169-1.269,0.263-1.941,0.263c-0.477,0-0.942-0.054-1.392-0.135c0.94,2.902,3.667,5.023,6.898,5.086c-2.528,1.96-5.712,3.134-9.174,3.134c-0.598,0-1.183-0.034-1.761-0.104C9.268,36.786,13.152,38,17.321,38c13.585,0,21.017-11.156,21.017-20.834c0-0.317-0.01-0.633-0.025-0.945C39.763,15.197,41.013,13.905,42,12.429"/></svg>
+				<svg class="twitter" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="48px" height="48px"><path fill="#03A9F4" d="M42,12.429c-1.323,0.586-2.746,0.977-4.247,1.162c1.526-0.906,2.7-2.351,3.251-4.058c-1.428,0.837-3.01,1.452-4.693,1.776C34.967,9.884,33.05,9,30.926,9c-4.08,0-7.387,3.278-7.387,7.32c0,0.572,0.067,1.129,0.193,1.67c-6.138-0.308-11.582-3.226-15.224-7.654c-0.64,1.082-1,2.349-1,3.686c0,2.541,1.301,4.778,3.285,6.096c-1.211-0.037-2.351-0.374-3.349-0.914c0,0.022,0,0.055,0,0.086c0,3.551,2.547,6.508,5.923,7.181c-0.617,0.169-1.269,0.263-1.941,0.263c-0.477,0-0.942-0.054-1.392-0.135c0.94,2.902,3.667,5.023,6.898,5.086c-2.528,1.96-5.712,3.134-9.174,3.134c-0.598,0-1.183-0.034-1.761-0.104C9.268,36.786,13.152,38,17.321,38c13.585,0,21.017-11.156,21.017-20.834c0-0.317-0.01-0.633-0.025-0.945C39.763,15.197,41.013,13.905,42,12.429"/></svg>
 			</a>
 
 		</div>
