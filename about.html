@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 	<head>
+		<script src="https://kit.fontawesome.com/2e44fc89e0.js" crossorigin="anonymous"></script>
+		
 			<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 			<title>
 				Catarina Mendes | About Me
@@ -12,10 +14,6 @@
 			<link rel="stylesheet" type="text/css" href="css/style.css">
 			<meta name="viewport" content="width=device-width, initial-scale=1">
 
-			<link rel="preconnect" href="https://fonts.googleapis.com">
-			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-			<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,700&family=Open+Sans&display=swap" rel="stylesheet">
-			
 			<link rel="preconnect" href="https://fonts.googleapis.com">
 			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 			<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,700&family=Open+Sans&display=swap" rel="stylesheet">
@@ -31,11 +29,12 @@
 
     <header id="toplevelnav">
 		<div class="container">
+			<div class="navtoggle" id="myNavtoggle">
 
 			<!-- Logo -->
 
 				<a href="index.html">
-					<img src="img/cm_logo.svg" class="logo" alt="Catarina Mendes">
+					<img class="logo" src="img/cm_logo.svg" alt="Catarina Mendes logo">
 				</a>
 
 			<!-- Navigation -->
@@ -45,9 +44,11 @@
 					<li><a href="index.html">Work</a></li>
 					<li><a href="about.html">About</a></li>
 					<li><a href="#contact">Contact</a></li>
+					<li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
 				</ul>
 			</nav>
 			
+			</div>
 		</div>
     </header>
 
@@ -159,6 +160,8 @@
 
 	</footer>
 	
+	
+	<script src="js/jquery-3.6.1.min"></script>
 	<script src="js/scripts.js"></script>
   
   </body>

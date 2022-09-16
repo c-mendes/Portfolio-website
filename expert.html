@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 	<head>
+		<script src="https://kit.fontawesome.com/2e44fc89e0.js" crossorigin="anonymous"></script>
+		
 			<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 			<title>
 				Expert App | UX Case Study
@@ -12,10 +14,6 @@
 			<link rel="stylesheet" type="text/css" href="css/style.css">
 			<meta name="viewport" content="width=device-width, initial-scale=1">
 
-			<link rel="preconnect" href="https://fonts.googleapis.com">
-			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-			<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,700&family=Open+Sans&display=swap" rel="stylesheet">
-			
 			<link rel="preconnect" href="https://fonts.googleapis.com">
 			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 			<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,700&family=Open+Sans&display=swap" rel="stylesheet">
@@ -32,11 +30,12 @@
 
     <header id="toplevelnav">
 		<div class="container">
+			<div class="navtoggle" id="myNavtoggle">
 
 			<!-- Logo -->
 
 				<a href="index.html">
-					<img src="img/cm_logo.svg" class="logo" alt="Catarina Mendes">
+					<img class="logo" src="img/cm_logo.svg" alt="Catarina Mendes logo">
 				</a>
 
 			<!-- Navigation -->
@@ -45,10 +44,12 @@
 				<ul>
 					<li><a href="index.html">Work</a></li>
 					<li><a href="about.html">About</a></li>
-					<li><a href="#contact">Contact</a></li>
+					<li><a href="#contact"  onclick="menuToggle()">Contact</a></li>
+					<li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
 				</ul>
 			</nav>
 			
+			</div>
 		</div>
     </header>
 
@@ -98,7 +99,7 @@
 
 		<div class="section">
 			<div class="container">
-				<h2>Developing Expert App: The process</h2>
+				<h2 id="top">Developing Expert App: The process</h2>
 					<p>Check each stage of the app's development in more detail via the links below</p>
 					<ul>
 						<li><a href="#research">1. Research</a></li>
@@ -132,6 +133,7 @@
 							<p>User interviews were also conducted and broken down by Students vs HR professionals aiming to understand the different expectations of each potential user.</p>
 							<p>User surveys and interview key findings were initially collected in Miro boards to inform the overall app research. Analysis of data included affinity mapping of both survey and interviews conducted.</p>
 							<p>Affinity maps and further key findings can be accessed <a href="https://drive.google.com/file/d/1qhzdjHOMr1WGVkjQzcjS0HyQRpW0dNFt/view">here</a>.</p>
+							<p><a href="#top">Back to Process Stages</a></p>
 
 					</div>
 			</div>
@@ -165,6 +167,7 @@
 									<p>Task analysis and user flows were also identified for the mental models and user journeys developed above. One example can be accessed <a href="https://drive.google.com/file/d/1DkC9-j2KRwDsIiOQYxnZVgxDac8f69bj/view">here</a>.</p>
 									<p>Also part of the research stage, a sitemap was developed for the app, and through the use of open-card sorting technique changes to the sitemap were explored, iterating on the original navigation.
 									A before and after of the sitemap can be accessed <a href="https://drive.google.com/file/d/176Xudh9bZIJbiOjYk44q5F3BMpUTuB4r/view">here</a>, illustrating the iterations and process conducted to achieve it.</p>
+									<p><a href="#top">Back to Process Stages</a></p>
 					</div>
 			</div>
 		</div>
@@ -217,6 +220,7 @@
 									<source srcset="img/expert-app/11-expert-app-page-high-fidelity-message-expert-600x338.png" media="(max-width:767px)">
 									<img src="img/expert-app/11-expert-app-page-high-fidelity-message-expert-1920x1080.png" alt="Sending a message to an expert - High-fidelity wireframe">
 								</picture>
+							<p><a href="#top">Back to Process Stages</a></p>
 					
 					</div>
 			</div>
@@ -251,6 +255,7 @@
 							<p>Detailed usability test results <a href="https://docs.google.com/spreadsheets/d/1CiJDbDd7X---lnC1uBONE_HILOflSyyl/edit#gid=718092944">available here</a>.</p>
 							<p>A final detailed report was then put together highlighting all results from user testing and updates to the app. Access to the final report available <a href="https://drive.google.com/file/d/1FXtwCwpwetpLsOFk5HSAzVUSArK2MgO8/view">here</a>.</p>
 							<p>Further testing has also been conducted through A/B preference testing methods, highlighting some extra edits to specific screens.</p>
+						<p><a href="#top">Back to Process Stages</a></p>
 					
 					</div>
 			</div>
@@ -272,7 +277,7 @@
 							<h4>Language Design Systems:</h4>
 								<p>When preparing deliverables for production, a Language Design System, identifying Expert app visual language has been created, highlighting usage of colour, components (images and text) for the app.</p>
 								<p>A copy of the final Language Design System document can be seen <a href="https://drive.google.com/file/d/11Yw1gFxX1TCac-h1gI0ph5GCs1ySUzPy/view">here</a>.</p>
-					
+							<p><a href="#top">Back to Process Stages</a></p>
 					</div>
 			</div>
 		</div>   <!-- End of Case Study Detail Text -->
@@ -317,6 +322,7 @@
 
 	</footer>
 	
+	<script src="js/jquery-3.6.1.min"></script>
 	<script src="js/scripts.js"></script>
 
   </body>
