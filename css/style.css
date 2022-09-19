@@ -336,7 +336,23 @@ nav > ul > li > a:active {
 	padding-bottom: 1rem;
 }
 
+#vocab-page .container h1 {
+	display: block;
+	font-family: 'Kalam';
+	color: #CB4C9A;
+	margin: 1rem;
+	line-height: 1.3;
+	text-align: center;
+	padding-bottom: 1rem;
+}
+
 #expert-page .blockquote {
+	margin: 0;
+	padding: .5rem 0 .5rem 2rem;
+	border-left: .25rem solid #3E7096;
+}
+
+#vocab-page .blockquote {
 	margin: 0;
 	padding: .5rem 0 .5rem 2rem;
 	border-left: .25rem solid #3E7096;
